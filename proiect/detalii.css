@@ -1,0 +1,57 @@
+/* Center the loader */
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;	
+}
+  
+.nume_detaliu{
+		width:160px;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		color: rgba(0, 0, 0, 0.9);
+		font-weight: bold;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-align: center;
+}
+
+.pret_detaliu{
+		display: inline;
+		text-align: left;
+		color: rgba(8, 16, 87);
+		font-weight: bold;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.moneda_detaliu{
+		display: inline;
+		margin-right: 10px;
+		text-align: right;
+		color: rgba(8, 16, 87);
+		font-weight: bold;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#descriere{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+}
+
+.tobe_detaliu{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		margin-top: 3%;
+
+}	
+#imagine_detaliu{
+		margin-top: 10%;
+		width: 35%;
+		border-radius: 4px;
+	}
+#detalii{
+		display: inline-block;
+		margin-left: 8px;
+		border-radius: 4px;
+		outline: none;
+}

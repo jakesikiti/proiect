@@ -1,0 +1,122 @@
+
+{
+	"produse":{
+		"tobe001":{
+			"nume":"DW Exotic Tobacco Fade over Elm",
+			"imagine":"images/DW_Exotic_Tobacco_Fade_over_Elm.jpg",
+			"imagine_detaliu":"images/DW_Exotic_Tobacco_Fade_over_Elm_d.jpg",
+			"pret":7850.00,
+			"moneda":"EUR",
+			"descriere":"Collector's Exotic series, Drumshells are made from 100% North American maple in SSC construction",
+			"stoc":10
+		},
+		"tobe002":{
+			"nume":"DW Finish Ply 24 Rock Bl Galaxy",
+			"imagine":"images/DW_Finish_Ply_24_Rock_Bl_Galaxy.jpg",
+			"imagine_detaliu":"images/DW_Finish_Ply_24_Rock_Bl_Galaxy_d.jpg",
+			"pret":2220.00,
+			"moneda":"EUR",
+			"descriere":"FinishPly series, Drum shells are made from maple wood, Colour: Black Galaxy",
+			"stoc":59
+		},
+		"tobe003":{
+			"nume":"DW Satin Oil Big Rock Ebony",
+			"imagine":"images/DW_Satin_Oil_Big_Rock_Ebony.jpg",
+			"imagine_detaliu":"images/DW_Satin_Oil_Big_Rock_Ebony_d.jpg",
+			"pret":1500.00,
+			"moneda":"EUR",
+            "descriere":"Satin Oil series - 2015 version, Big Rock version, Chrome shell hardware",
+			"stoc":13
+        },
+        "tobe004":{
+			"nume":"DW Satin Oil Fusion Set Natural",
+			"imagine":"images/DW_Satin_Oil_Fusion_Set_Natural.jpg",
+			"imagine_detaliu":"images/DW_Satin_Oil_Fusion_Set_Natural_d.jpg",
+			"pret":1290.50,
+			"moneda":"EUR",
+			"descriere":"Satin Oil Series - version 2015, Rock configuration in SSC construction (Specialised Shell Contruction)",
+			"stoc":13
+        },
+        "tobe005":{
+			"nume":"DW Satin Oil Set White Wash SSC +",
+			"imagine":"images/DW_Satin_Oil_Big_Rock_Ebony.jpg",
+			"imagine_detaliu":"images/DW_Satin_Oil_Big_Rock_Ebony_d.jpg",
+			"pret":2370.80,
+			"moneda":"EUR",
+			"descriere":"Satin Oil Series, Rock configuration in SSC+ construction",
+			"stoc":13
+        },
+        "tobe006":{
+			"nume":"Gretsch USA Custom Rock Silver Glass",
+			"imagine":"images/Gretsch_USA_Custom_Rock_Silver_Glass.jpg",
+			"imagine_detaliu":"images/Gretsch_USA_Custom_Rock_Silver_Glass_d.jpg",
+			"pret":3750.00,
+			"moneda":"EUR",
+			"descriere":"USA Custom Series - Rock Version, Nitro foil related boiler, Shell from 6-ply maple wood",
+			"stoc":13
+        },
+        "tobe007":{
+			"nume":"Ludwig Classic Maple Fab 22 Black Oy",
+			"imagine":"images/Ludwig_Classic_Maple_Fab_22_Black_Oy.jpg",
+			"imagine_detaliu":"images/Ludwig_Classic_Maple_Fab_22_Black_Oy_d.jpg",
+			"pret":3950.65,
+			"moneda":"EUR",
+			"descriere":"Classic Maple series, Model: Fab 22, Drum shell made of 100% maple",
+			"stoc":13
+        },
+        "tobe008":{
+			"nume":"Mapex Black Panther Velvetone Set",
+			"imagine":"images/Mapex_Black_Panther_Velvetone_Set.jpg",
+			"imagine_detaliu":"images/Mapex_Black_Panther_Velvetone_Set_d.jpg",
+			"pret":2850.80,
+			"moneda":"EUR",
+			"descriere":"All drum shells are made from selected American maple wood with a thickness of 8.1 mm",
+			"stoc":13
+        },
+        "tobe009":{
+			"nume":"Mapex Black Panther Black Widow Set",
+			"imagine":"images/Mapex_Black_Panther_Black_Widow_Set.jpg",
+			"imagine_detaliu":"images/Mapex_Black_Panther_Black_Widow_Set_d.jpg",
+			"pret":3840.95,
+			"moneda":"EUR",
+			"descriere":"Model: BPNW628XFLTB, All drumshells are made from 6-ply specially selected American maple wood",
+			"stoc":13
+        },
+        "tobe010":{
+			"nume":"Mapex Black Panther Blaster Set",
+			"imagine":"images/Mapex_Black_Panther_Blaster_Set.jpg",
+			"imagine_detaliu":"images/Mapex_Black_Panther_Blaster_Set_d.jpg",
+			"pret":3560.10,
+			"moneda":"EUR",
+			"descriere":"New model: BPNL628XLWU, New tom mount system, Black nickel hardware",
+			"stoc":13
+		},
+		"tobe011":{
+			"nume":"Yamaha Absolute Hybrid Standard RAU",
+			"imagine":"images/Yamaha_Absolute_Hybrid_Standard_RAU.jpg",
+			"imagine_detaliu":"images/Yamaha_Absolute_Hybrid_Standard_RAU_d.jpg",
+			"pret":4850.10,
+			"moneda":"EUR",
+			"descriere":"New model: BPNL628XLWU, New tom mount system, Black nickel hardware",
+			"stoc":13
+		},
+		"tobe012":{
+			"nume":"SJC Drums Custom Stage set Purple brass",
+			"imagine":"images/SJC_Drums_Custom_Stage_set_Purple_brass.jpg",
+			"imagine_detaliu":"images/SJC_Drums_Custom_Stage_set_Purple_brass_d.jpg",
+			"pret":4480.10,
+			"moneda":"EUR",
+			"descriere":"New model: BPNL628XLWU, New tom mount system, Black nickel hardware",
+			"stoc":13
+        }
+	},
+	"cos":{
+		"asdd":{
+			"nume":"",
+			"imagine":"",
+			"pret":0,
+			"moneda":"EUR",
+			"cantitate":0
+		}
+	}
+}
