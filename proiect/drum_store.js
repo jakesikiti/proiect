@@ -1,10 +1,10 @@
 	var load;
 
 	function load() {
-		load = setTimeout(showPage, 100);
+		load = setTimeout(showLoader, 100);
 	}
 
-	function showPage() {
+	function showLoader() {
 		document.getElementById("loader").style.display = "none";
 	}
 
@@ -27,8 +27,8 @@
 			for(let i in lista.produse){
                 if (lista.produse[i]===null){continue;}
 				str+=`
-					<div class="col-lg-3 col-md-6 col-sm-9 col-xs-12">
-						<div class="global">
+					<div class="col-lg-2 col-md-6 col-sm-8 col-xs-12">
+						<div class="global col-xs-7">
 							<a href="detalii.html?produse=${i}"><div class="image" style="background-image:url(${lista.produse[i].imagine})"></div></a>
 							<a class="ref_nume" href="detalii.html?produse=${i}"><div class="nume">${lista.produse[i].nume}</div></a>
 							<div class="pret_buton"><span class="pret">${lista.produse[i].pret.toFixed(2)}</span>
