@@ -88,7 +88,6 @@ body {
 }
 
 .global{
-		/* width: 192px; */
 		background: rgba(230, 230, 230, 0.0);
 		align-items: center;
 		justify-content: center;
@@ -133,6 +132,7 @@ body {
 
 .ref_nume{
 		text-decoration: none;
+		height: 40px;
 }
 
 .tobe{
@@ -163,6 +163,7 @@ body {
 		transition: transform .2s ease-out;
 		/* border: solid 1px rgb(104, 1, 1); */
 }
+
 .nume{
 		width:200px;
 		height: 55px;
@@ -257,6 +258,9 @@ body {
 	width: 8.33333333%;
 }
 
+.global{
+	width: 65% !important;
+}
 /*</editor-fold>*/
 
 /*<editor-fold desc="Small Screen .col-sm- min-width: 768px">*/
