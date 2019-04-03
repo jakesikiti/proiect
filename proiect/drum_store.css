@@ -7,7 +7,6 @@ body {
 		/* background: url(images/background.jpg); */
 		background: url(images/background_c.jpg);
 		height: auto;
-		width: 100%;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -70,8 +69,14 @@ body {
 
 /*<editor-fold desc="Extra Small Screen .col-xs-">*/
 
+#magazin_header-buton-cos {
+	position: sticky;
+
+	top: 0;
+}
+
 .cos{
-		position: fixed;
+		position: relative;
 		width: 130px;
 		height: 30px;
 		left: calc(100% - 140px); 
@@ -140,8 +145,8 @@ body {
 
 .image{
 		display: inline-block;
-		width: 160px;
-		height: 160px;
+		width: 190px;
+		height: 190px;
 		background-repeat: no-repeat;
 		border-radius: 4px;
 		margin-bottom: 10px;
@@ -159,7 +164,7 @@ body {
 		/* border: solid 1px rgb(104, 1, 1); */
 }
 .nume{
-		width:160px;
+		width:200px;
 		height: 55px;
 		padding: 0 0 0 0;
 		margin: 0 0 0 0;

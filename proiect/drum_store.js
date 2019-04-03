@@ -27,7 +27,7 @@
 			for(let i in lista.produse){
                 if (lista.produse[i]===null){continue;}
 				str+=`
-					<div class="col-lg-2 col-md-6 col-sm-8 col-xs-12">
+					<div class="col-lg-2 col-md-4 col-sm-8 col-xs-12">
 						<div class="global col-xs-7">
 							<a href="detalii.html?produse=${i}"><div class="image" style="background-image:url(${lista.produse[i].imagine})"></div></a>
 							<a class="ref_nume" href="detalii.html?produse=${i}"><div class="nume">${lista.produse[i].nume}</div></a>
