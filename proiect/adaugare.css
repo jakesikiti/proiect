@@ -36,17 +36,20 @@
     vertical-align: middle;
 }
 
+.cosHead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .tabHead{
     /* border: 1px solid black; */
     display: inline;
-    vertical-align: middle;
-    margin: left;
-    align-self: center;
     text-align: center;
+    margin: auto;
     /* text-decoration: underline; */
     color: black;
-    min-width: 100%;
-    max-width: 100%;
+    
     border-bottom: solid 1px  rgb(212, 72, 72);
 }
 

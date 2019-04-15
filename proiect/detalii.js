@@ -38,8 +38,29 @@ function adauga() {
   else {
     lista = JSON.parse(cos);
   }
-  lista.push({cantitate : document.getElementById("campcantitate").value, imagine : prods.imagine, moneda : "&nbsp;EUR", nume : prods.nume, pret : prods.pret});
-  window.localStorage.setItem("cos", JSON.stringify(lista));
+
+  if(document.getElementById("campcantitate").value > 0){
+    var flag = 0;
+    for (var i = 0; i < lista.length; i++){
+        if(lista[i].nume === prods.nume){
+            flag = 1;
+            lista[i].cantitate = String(parseInt(lista[i].cantitate) + parseInt(document.getElementById("campcantitate").value));
+        }
+    }
+    if(flag === 0)
+      lista.push({cantitate : document.getElementById("campcantitate").value, imagine : prods.imagine, moneda : "&nbsp;EUR", nume : prods.nume, pret : prods.pret});
+    window.localStorage.setItem("cos", JSON.stringify(lista));
+    document.getElementById("mesaj").innerHTML = "<p>Produsul a fost adaugat in cos</p>";
+    document.getElementById("mesaj").style.visibility = "visible";
+    document.getElementById("mesaj").style.color = "green";
+    setTimeout(function(){document.getElementById("mesaj").style.visibility = "hidden";}, 1000);
+  }
+  else {
+    document.getElementById("mesaj").innerHTML = "<p>Cantitatea trebuie sa fie pozitiva</p>";
+    document.getElementById("mesaj").style.visibility = "visible";
+    document.getElementById("mesaj").style.color = "red";
+    setTimeout(function(){document.getElementById("mesaj").style.visibility = "hidden";}, 1000);
+  }
 }
 
 

@@ -18,52 +18,76 @@ function post(){
 }
 
 function draw(){
-		
+	var total = 0.0;
     var str = "";
     if(lista != null)
     {
-        for(i=0; i<lista.length; i++){
+        
+        str += `
+        <thead class="cosHead">
+            <tr class="cosHead">
+                <th class="tabHead">IMAGINE</th>
+                <th class="tabHead">PRODUS</th>
+                <th class="tabHead">PRET</th>
+                <th class="tabHead">CANTITATE</th>
+            </tr>
+        </thead>
+        <tbody>
+        `
+
+        for(i=0; i<lista.length; i++) {
             if (lista[i]===null){continue;}
-            str+=`
-            <ul style="text-align: center;">
-                <li class="tabHead">IMAGINE</li>
-                <li class="tabHead">PRODUS</li>
-                <li class="tabHead">PRET</li>
-                <li class="tabHead">CANTITATE</li>
-            </ul>
-            <tbody>
+            total += parseFloat(lista[i].pret) * parseFloat(lista[i].cantitate);
+            str +=`
             <tr id="tblRow">
                 <td class="image_cos"><div class="image_cos" style="background-image:url(${lista[i].imagine}"></div></td>
                 <td class="nume_cos"><div>&nbsp;${lista[i].nume}&nbsp;</div></td>
-                <td class="pret_cos"><div>&nbsp;${lista[i].pret.toFixed(2)}</div></td>
+                <td class="pret_cos"><div>&nbsp;${parseFloat(lista[i].pret).toFixed(2)}</div></td>
                 <td class="moneda_cos"><div>${lista[i].moneda}&nbsp;&nbsp;</div></td>
-                <td><input id="campcantitate" class="cantitate" type="number" value="${lista[i].cantitate}"/></td>
-                <td><button id="add_rem" onclick="stergeProdus(${i})")>Sterge</button></td>
+                <td><input id="campcantitate${i}" class="cantitate" type="number" value="${lista[i].cantitate}"/></td>
+                <td><button id="mofica" onclick="modificaProdus(${i})">Modifica</button></td>
+                <td><button id="add_rem" onclick="stergeProdus(${i})">Sterge</button></td>
             </tr>
-            <tr>
-            <td>TOTAL</td>
-            <td></td>
-            <td>${lista[i].moneda}</td>
-            </tr>
-            </tbody>
             `
         }
+
+        str += `
+            <tr>
+                <td>TOTAL</td>
+                <td>${total.toFixed(2)}</td>
+                <td>EUR</td>
+            </tr>
+        </tbody>
+        `
+
         document.querySelector(".tabel_cumparaturi").innerHTML=str;
     }
 }
 
-function stergeProdus() {
+function stergeProdus(index) {
     var cos = window.localStorage.getItem("cos");
-  
-    lista = [];
-  
-    lista = JSON.parse(cos);
-  
-    localStorage.removeItem({lista: document.getElementById("tblRow")});
+
+    lista.splice(index, 1);
+
     window.localStorage.setItem("cos", JSON.stringify(lista));
-  }
+
+    draw();
+}
 
 
+function modificaProdus(index) {
+    if(document.getElementById("campcantitate" + index).value > 0) {
+        var cos = window.localStorage.getItem("cos");
+
+        lista[index].cantitate = String(document.getElementById("campcantitate" + index).value);
+
+        window.localStorage.setItem("cos", JSON.stringify(lista));
+    }
+
+    draw();
+}
+
+//   localStorage.setItem("localStore", JSON.stringify(deleteItem(JSON.parse(localStorage.getItem("localStore")), '1461570048166')));
 /*
 Lista produse:
 GET /produse
