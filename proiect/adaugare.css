@@ -1,0 +1,67 @@
+
+#loader {
+	position: absolute;
+	left: 47%;
+	top: 50%;	
+}
+
+.image_cos{
+	/* display: inline-block; */
+	width: 70px;
+	height: 70px;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+    padding: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border: solid 1px rgba(0, 0, 0, 0.0);
+}
+
+.tabel_cumparaturi{
+    /* vertical-align: middle; */
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Arial, 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: solid 2px  rgb(212, 72, 72);
+    border-radius: 10px;
+    width:50%;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+.tabHead{
+    /* border: 1px solid black; */
+    display: inline;
+    vertical-align: middle;
+    margin: left;
+    align-self: center;
+    text-align: center;
+    /* text-decoration: underline; */
+    color: black;
+    min-width: 100%;
+    max-width: 100%;
+    border-bottom: solid 1px  rgb(212, 72, 72);
+}
+
+.tblRow{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.cantitate{
+    height: 16px;
+    width: 40px;
+}
+
+.nume_cos, .pret_cos, .moneda_cos, .image_cos{
+    margin-left:5%;
+    min-width: 100%;
+    max-width: 100%;
+}

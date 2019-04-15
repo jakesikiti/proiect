@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html>
+	<!-- https://jakesikiti.github.io/proiect/proiect/index.html -->
+	<head>
 
-<title>DRUM STORE</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="drum_store.css">
-<script src="drum_store.js"></script>
-  
-</head>
+	<title>DRUM STORE</title>
 
-	<body class= "background_image" body onload="get()">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="drum_store.css">
+	<link rel="stylesheet" type="text/css" href="carousel/carousel.css">
+	<script src="drum_store.js"></script>
+	
+	</head>
 
-			<div id="loader">
-					<img src="images/ajax-loader (2).gif"/>
-			</div>
+	<body class= "background_image" onload="get()">
 
-		<div id="magazin_header">
-			<div class="logo">
-				<img src="images/store_drum_logo.jpg" style="max-width:100%; max-height:100%">
-			</div>
+		<div id="loader">
+			<img src="images/ajax-loader (2).gif"/>
 		</div>
 
-		<div id="magazin_header">
-				<h1 class= "titlu">DRUM STORE</h1>
+		<div class="magazin_header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" style="max-width:100%; max-height:100%"></a>
+				</div>
+					<a class= "titlu" href="index.html"><h2>DRUM STORE Premium Drum Kits</h2></a>
 		</div>
-
+		
 		<div id="magazin_header-buton-cos">
-			<button class="cos" type="button" onclick="" >Cos cumparaturi</button>
+			<fieldset class="formular">
+				<form class="formular_cos" onsubmit="event.preventDefault()";>
+					<input name="nume" style="width: 130px; height: 30px;" type="number" placeholder="     Adauga Produs"/>
+					<button class="add" onclick="adauga()">Adauga Produs</button> 
+				</form>
+				<a href="cos.html"><button class="cos" type="button">Cos cumparaturi</button></a>
+			</fieldset>
+		</div>
+		
+		<div class="slideshow-container" style="text-align:center">
+
+		  <div class="slide fadeOut">
+				<img class="imageC" src="carousel/images/1Pearl Reference Pure Rock 377.jpg">
+				<img class="imageC" src="carousel/images/2Millenium Still Series Cymbal Set reg.jpg">
+			</div>
+
+		  <div class="slide fadeOut">
+				<img class="imageC" src="carousel/images/4Zildjian A-Custom Thomann ltd. Box Set.jpg">
+				<img class="imageC" src="carousel/images/3DR Customs Shell Set Ebony Double Bass.jpg">
+			</div>
+
+		  <div class="slide fadeOut">
+				<img class="imageC" src="carousel/images/5DW Finish Ply Blue Moonstone.jpg">
+				<img class="imageC" src="carousel/images/6Paiste Set 3 201 14HH 16C 20R.jpg">
+			</div>
+	
+		  <div class="slide fadeOut">
+				<img class="imageC" src="carousel/images/8Istanbul Agop Xist Brilliant Cymbal Set Pro.jpg">
+				<img class="imageC" src="carousel/images/7Pearl Masterworks Heritage Euca. Red.jpg">
+			</div>
+			
+			<div class="slide fadeOut">
+				<img class="imageC" src="carousel/images/9SJC Drums Custom 4-piece Satin Blue Aged.jpg">
+				<img class="imageC" src="carousel/images/10Zildjian K-Custom Darkbox Set.jpg">
+			</div>
+
+			<div class="slide fadeOut">
+				<img class="imageC" src="carousel/images/12Zultan Dark Matter Professional Set.jpg">
+				<img class="imageC" src="carousel/images/11Tama STAR Drum Walnut Stand. DMW.jpg">
+			</div>
+		</div>
+		<br>
+
+		<!--dots/circles -->
+		<div style="text-align:center; cursor: context-menu;">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span>
+			<span class="dot"></span> 
+			<span class="dot"></span> 
 		</div>
 
 		<div class="tobe">
-			
 		</div>
 	
 	</body>

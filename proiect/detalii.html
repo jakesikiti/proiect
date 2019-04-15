@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html>
 
-<title>detalii</title>
+	<head>
 
-<link rel="stylesheet" type="text/css" href="detalii.css">
-<link rel="stylesheet" type="text/css" href="drum_store.css">
-<script src="detalii.js"></script>
-  
-</head>
+	<title>detalii</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="detalii.css">
+	<link rel="stylesheet" type="text/css" href="drum_store.css">
+	<script src="detalii.js"></script>
+	<!-- <script src="adaugare.js"></script> -->
 
-	<body class= "background_image" style="margin:0;">
+	</head>
 
-			<div id="loader">
-					<img src="images/ajax-loader (2).gif"/>
-			</div>
-
-		<div id="magazin_header">
+	<body>
+		
+		<div id="loader">
+			<img src="images/ajax-loader (2).gif">
+		</div>
+			
+		<div class="magazin_header">
 			<div class="logo">
-				<img src="images/store_drum_logo.jpg" style="max-width:100%; max-height:100%">
+				<a href="index.html"><img src="images/logo.png" style="max-width:100%; max-height:100%"></a>
 			</div>
+				<a class= "titlu" href="index.html"><h2>DRUM STORE Premium Drum Kits</h2></a>
 		</div>
-
-		<div id="magazin_header">
-				<h1 class= "titlu">DRUM STORE</h1>
+		
+			<div id="magazin_header-buton-cos">
+				<fieldset class="formular">
+					<form class="formular_cos" style="visibility: visible;" onsubmit="event.preventDefault()";>
+						<input id="campcantitate" class= "cantitate" name="nume" type="number" placeholder="Cantitate"/>
+						<button class="add" onclick="adauga()">Adauga Produs</button>
+					</form>
+					<a href="cos.html"><button class="cos" type="button">Cos cumparaturi</button></a> 
+				</fieldset>
+			</div>
+		<div class="mesaj">
+			<tr style="width: 300px; height: 24px; color: rgb(0, 196, 196);">
+				<td>Produsul a fost adaugat in cos</td>
+			</tr>
 		</div>
-
-		<div id="magazin_header">
-			<button class="cos" type="button" onclick="" >Cos cumparaturi</button>
-		</div>
+		<div id="container">
+			
 			<div class="tobe_detaliu">
-				<div class="nume_detaliu"></div>
-				<div class="pret_detaliu"></div>
-				<div class="moneda_detaliu"></div>
-                <img id="imagine_detaliu"/>
-                <div id="descriere"></div>
-                <!-- <div id="ingrediente"></div>
-                <div id="reteta"></div> -->
-			</div>		
+
+				<div class="nume_detaliu">
+				</div>
+				
+				<div class="detalii">
+					<img class="imagine_detaliu">
+					<div class="info">
+						<div class="pret_moneda">
+							<span class="pret_detaliu"></span>
+							<span class="moneda_detaliu"></span>
+						</div>
 	
+						<div class="stoc_info">
+							<span class="buc_stoc"></span>
+							<span class="stoc"></span>
+							<span class="bucati"></span>
+							
+						</div>
+
+						<div class="descriere">
+						</div>
+
+					</div>
+					
+				</div>
+			</div> 
+			
+		</div>            	
 	</body>
 </html>
