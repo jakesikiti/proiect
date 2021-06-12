@@ -1,3 +1,5 @@
+	const cors = require('cors')({origin: true});
+
 	var load;
 
 	function load() {
