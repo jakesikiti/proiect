@@ -23,7 +23,7 @@
 				showSlides();
 				draw();
 		  })
-		
+	}
 	function draw(){
 
 		var str = "";
