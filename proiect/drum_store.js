@@ -11,6 +11,9 @@
 	
 	var lista=[
 		];
+	const cors = require('cors')({origin: true});
+	exports.fn = functions.https.onRequest((req, res) => {
+    		cors(req, res, () => {
 		function get(){
 			
 			fetch('https://magazin-c1a8a.firebaseio.com/.json', {
@@ -24,6 +27,8 @@
 					draw();
 			  })
 		}
+		})
+		});
 		
 		function draw(){
 		
