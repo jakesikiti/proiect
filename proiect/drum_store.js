@@ -1,3 +1,4 @@
+	const cors = require('cors')({origin: true});
 	var load;
 
 	function load() {
@@ -8,7 +9,7 @@
 		document.getElementById("loader").style.display = "none";
 	}
 	
-	const cors = require('cors')({origin: true});
+	
 	var lista=[
 		];
 		function get(){
