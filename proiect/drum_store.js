@@ -12,7 +12,10 @@
 		];
 		function get(){
 			
-			fetch('https://magazin-c1a8a.firebaseio.com/.json')
+			fetch('https://magazin-c1a8a.firebaseio.com/.json',{
+			mode: 'cors',
+  			credentials: 'omit'
+			})
 			  .then(response => response.json())
 			  .then(data => {
 					lista=data;
