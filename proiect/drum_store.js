@@ -1,5 +1,3 @@
-	const cors = require('cors')({origin: true});
-
 	var load;
 
 	function load() {
@@ -9,15 +7,13 @@
 	function showLoader() {
 		document.getElementById("loader").style.display = "none";
 	}
-
+	
+	const cors = require('cors')({origin: true});
 	var lista=[
 		];
 		function get(){
 			
-			fetch('https://magazin-c1a8a.firebaseio.com/.json',{
-			mode: 'cors',
-  			credentials: 'omit'
-			})
+			fetch('https://magazin-c1a8a.firebaseio.com/.json')
 			  .then(response => response.json())
 			  .then(data => {
 					lista=data;
