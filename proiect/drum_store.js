@@ -8,18 +8,14 @@
 		document.getElementById("loader").style.display = "none";
 	}
 
-	function after_request(response){
-		  response.headers.add('Access-Control-Allow-Origin', '*');
-		  response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization');
-		  response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-		  return response;
-	}
-
 	var lista=[
 		];
 		function get(){
 			
-			fetch('https://magazin-c1a8a.firebaseio.com/.json')
+			fetch('https://magazin-c1a8a.firebaseio.com/.json', {
+			mode: 'cors',
+  			credentials: 'include'
+			})
 			  .then(response => response.json())
 			  .then(data => {
 					lista=data;
